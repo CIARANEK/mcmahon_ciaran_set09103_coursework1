@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Best0' Music Catalogue</title>
+</head>
+<body>
+<h1><center>BestO' Music Catalogue</center></h1>
+
+{% for image_name in image_names %}
+
+<img src=" {{url_for('static', filename=image_name)}}">
+
+{% endfor %}
+
+</body>
+</html>

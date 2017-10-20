@@ -9,7 +9,9 @@
 
 {% for image_name in image_names %}
 
-<img src=" {{url_for('static', filename=image_name)}}">
+<a href="http://localhost:5000/{{image_name}}">
+<img src=" {{url_for('static', filename=image_name)}}" width="600" height="600" >
+</a>
 
 {% endfor %}
 

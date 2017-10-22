@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<style>
+body{
+	background-color: gray;
+	margin-left: 70px;
+}
+h1{
+	font-size: 250%;
+	font-family: Verdana;
+	color: White
+}
+</style>
   <meta charset="UTF-8">
   <title>Best0' Music Catalogue</title>
 </head>
 <body>
-<div class ="main">
+
 <h1><center>BestO' Music Catalogue</center></h1>
 
 {% for image_name in image_names %}
 
 <a href="http://localhost:5000/{{image_name}}">
-<img src=" {{url_for('static', filename=image_name)}}" width="600" height="600" >
+<img src=" {{url_for('static', filename=image_name)}}" width="600" height="600" />
 </a>
 
 {% endfor %}
 
-</div>
 </body>
 </html>
